@@ -1,0 +1,73 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        /* A altura ocupa 100% da tela */
+    }
+
+    .menu {
+        background-color: #333;
+        color: white;
+        width: 250px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .menu a:hover {
+        color: #ff6347;
+    }
+
+    .conteudo {
+        flex: 1;
+        /* O conteúdo ocupa o restante do espaço */
+        padding: 20px;
+        background-color: #f4f4f4;
+        overflow-y: auto;
+        /* Caso o conteúdo seja maior que a tela, exibe uma barra de rolagem */
+    }
+
+    .conteudo h1 {
+        margin-bottom: 20px;
+    }
+
+    .conteudo p {
+        line-height: 1.6;
+    }
+</style>
+
+<body>
+    <div class="menu">
+        <h2>Menu</h2>
+        <a href="#">Menu 1</a>
+        <a href="#">Menu 3</a>
+        <a href="#">Menu 4</a>
+    </div>
+
+    <div class="conteudo">
+        <h1>Bem-vindo ao Conteúdo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet turpis ligula. Aenean cursus
+            velit ac fermentum consequat. Fusce aliquam malesuada sapien, et cursus eros tempus a. Integer vehicula,
+            lectus a sodales finibus, felis augue viverra metus, nec consectetur nunc nisi in enim. Ut ultricies odio ut
+            vestibulum faucibus.</p>
+        <p>Nullam ac massa at nunc interdum vehicula. Nulla euismod neque sit amet vehicula sodales. Aliquam erat
+            volutpat. Quisque euismod odio ac magna tristique, in scelerisque ligula consequat. Vivamus sit amet urna
+            vestibulum, consectetur felis id, ullamcorper nulla. Cras auctor urna ut arcu congue, sed euismod eros
+            dictum.</p>
+    </div>
+</body>

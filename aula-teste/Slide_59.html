@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Menu Superior</title>
+    <!--<link rel="sheetstyle" href="menu.css">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: black;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style:none;
+            display: flex;
+            justify-content:center;
+            /*flex-direction: column;*/
+            gap: 3px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            /*transition: background 0.3s;*/
+            font-weight:bold;
+            padding: 8px 12px;
+            transition: color 0.5s;
+        }
+
+        nav ul li a:hover {
+            background-color: #04f5f5;
+            color:rgb(255, 0, 34);
+            border-radius: 25px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        main img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Slide_59.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.
+            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+        <img src="https://www.uva.br/conteudo/2021/09/Sem-Titulo-2-1.png" alt="Imagem de exemplo">
+        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis
+            porttitor volutpat. Sed porttitor lectus nibh.</p>
+        <img src="https://www.uva.br/conteudo/2021/09/Sem-Titulo-2-2.png" alt="Outra imagem de exemplo">
+    </main>
+</body>
+
+</html>
